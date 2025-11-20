@@ -29,14 +29,15 @@ export default function Benefits() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: idx * 0.1 }}
-              className="rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 p-6"
+              transition={{ duration: 0.45, delay: idx * 0.12 }}
+              className="rounded-2xl border border-white/10 p-6"
+              style={{ background: 'rgba(255,255,255,0.07)', WebkitBackdropFilter: 'blur(10px)', backdropFilter: 'blur(10px)' }}
             >
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-[#4F46E5]/20 to-[#10B981]/20 text-white">
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-white/20 to-[#8C52FF]/30 text-white">
                 <item.icon className="w-6 h-6" />
               </div>
               <h3 className="mt-4 text-white text-xl font-semibold" style={{ fontFamily: 'Space Grotesk, Inter, sans-serif' }}>{item.title}</h3>
-              <p className="mt-2 text-white/80 text-sm">{item.desc}</p>
+              <p className="mt-2 text-white/85 text-sm">{item.desc}</p>
             </motion.div>
           ))}
         </div>
